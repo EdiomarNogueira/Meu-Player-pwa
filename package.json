@@ -1,0 +1,30 @@
+{
+  "name": "meuplayer",
+  "private": true,
+  "version": "3.1.0",
+  "description": "PWA IPTV + Estúdio de Mídia Local com revogação completa de cache",
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/copyFfmpegCore.mjs && vite --port 5173",
+    "build": "node scripts/copyFfmpegCore.mjs && tsc -b && vite build",
+    "preview": "vite preview --port 4173"
+  },
+  "dependencies": {
+    "@ffmpeg/core": "^0.12.10",
+    "@ffmpeg/ffmpeg": "^0.12.15",
+    "@ffmpeg/util": "^0.12.2",
+    "hls.js": "^1.5.17",
+    "idb": "^8.0.0",
+    "lucide-react": "^0.454.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.3",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.10",
+    "vite-plugin-pwa": "^0.20.5"
+  }
+}

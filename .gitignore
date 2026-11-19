@@ -1,0 +1,81 @@
+node_modules/
+dist/
+dev-dist/
+public/ffmpeg/
+*.tsbuildinfo
+
+# Arquivos e dados pessoais adicionados localmente ao projeto.
+# O app mantém preferências, listas, histórico e miniaturas no IndexedDB do navegador;
+# estes diretórios cobrem cópias, exportações e backups manuais dentro do workspace.
+**/data/
+**/userdata/
+**/user-data/
+**/user_data/
+**/local-data/
+**/local_data/
+**/private/
+**/uploads/
+**/downloads/
+**/exports/
+**/backups/
+**/cache/
+**/caches/
+**/thumbnails/
+**/thumbs/
+**/miniaturas/
+**/frames/
+**/converted/
+**/conversoes/
+
+*.mjs
+
+# Segredos em configurações locais; mantém o exemplo versionável.
+.env*
+!.env.example
+
+# Playlists IPTV e listas locais podem conter URLs, tokens e credenciais pessoais.
+*.m3u
+*.m3u8
+*.pls
+*.xspf
+*.wpl
+
+# Saídas produzidas pelo player (capturas de quadro e vídeos convertidos).
+*-20??-??-??T??-??-??-???Z.png
+*-h264.mp4
+*-hevc.mp4
+*-vp9.webm
+
+# Mídia solta no workspace é tratada como conteúdo local do usuário.
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.webp
+*.avif
+*.heic
+*.bmp
+*.tif
+*.tiff
+*.mp4
+*.m4v
+*.mkv
+*.mov
+*.avi
+*.webm
+*.mpg
+*.mpeg
+*.mp3
+*.m4a
+*.aac
+*.wav
+*.flac
+*.ogg
+*.opus
+*.srt
+*.vtt
+
+# Assets visuais do app que devem continuar no repositório.
+!public/apple-touch-icon.png
+!public/pwa-192x192.png
+!public/pwa-512x512.png
